@@ -1,10 +1,10 @@
 {
-  "name": "harmony-uikit",
+  "name": "@harmonylang/harmony-uikit",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "license": "MIT",
   "scripts": {
     "compile": "tsc -p .",
-    "prepare": "npm run compile"
+    "postinstall": "npm run compile"
   }
 }
