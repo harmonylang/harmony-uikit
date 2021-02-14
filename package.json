@@ -5,6 +5,6 @@
   "license": "MIT",
   "scripts": {
     "compile": "tsc -p .",
-    "postinstall": "npm run compile"
+    "postinstall": "npm run install && npm run compile && rm -rf src && rm -rf tsconfig.json"
   }
 }
