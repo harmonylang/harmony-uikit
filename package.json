@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "compile": "tsc -p .",
+    "setup": "yarn install --ignore-scripts",
     "postinstall": "npm run compile && rm -rf src && rm -rf tsconfig.json"
   }
 }
