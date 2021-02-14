@@ -5,6 +5,6 @@
   "license": "MIT",
   "scripts": {
     "compile": "tsc -p .",
-    "prepare": "npm install && npm run compile"
+    "prepare": "npm run compile"
   }
 }
