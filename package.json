@@ -4,6 +4,7 @@
   "main": "./dist/index.js",
   "license": "MIT",
   "scripts": {
-    "compile": "tsc -p ."
+    "compile": "tsc -p .",
+    "prepare": "npm install && npm run compile"
   }
 }
