@@ -3,8 +3,8 @@ import {
     IntermediateMicroStep,
     IntermediateTrace,
     IntermediateValueRepresentation
-} from "../IntermediateJson";
-import {CharmonyStackTrace} from "../CharmonyData";
+} from "../../types/IntermediateJson";
+import {CharmonyStackTrace} from "../../types/CharmonyJson";
 import {parseIntermediateValueRep, parseVariableSet} from "./valueParser";
 import {fromEntries, shallowClone} from "../../util/object_util";
 

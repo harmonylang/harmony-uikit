@@ -1,4 +1,4 @@
-import {IntermediateKeyValueRep, IntermediateValueRepresentation} from "../IntermediateJson";
+import {IntermediateKeyValueRep, IntermediateValueRepresentation} from "../../types/IntermediateJson";
 import {entries} from "../../util/object_util";
 
 export function parseIntermediateValueRep(v: IntermediateValueRepresentation): unknown {

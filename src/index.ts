@@ -1,5 +1,5 @@
-import parseCharmony from "./charmony/CharmonyData";
-export {CharmonyTopLevel, CharmonyExecutedCode} from "./charmony/CharmonyData"
-export {IntermediateJson} from './charmony/IntermediateJson';
+import parseCharmony from "./charmony";
+export {CharmonyTopLevel, CharmonyExecutedCode} from "./types/CharmonyJson"
+export {IntermediateJson} from './types/IntermediateJson';
 
 export const parse = parseCharmony;
