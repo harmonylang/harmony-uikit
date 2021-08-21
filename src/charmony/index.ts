@@ -1,4 +1,4 @@
-import { IntermediateJson } from "..";
+import { IntermediateJson } from "../types/IntermediateJson";
 import { CharmonyExecutedCode, CharmonyTopLevel } from "../types/CharmonyJson";
 import { IntermediateJsonManager } from "../types/IntermediateJson";
 import { getExecutedCode } from "./code/getExecutedCode";
