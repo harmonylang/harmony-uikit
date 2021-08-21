@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "tsc -p .",
     "setup": "yarn install --ignore-scripts",
-    "postinstall": "npm run compile && rm tsconfig.json",
+    "postinstall": "ls && echo $(pwd) && npm run compile && rm tsconfig.json",
     "test": "mocha -r ts-node/register tests/**/*.test.ts"
   },
   "dependencies": {
