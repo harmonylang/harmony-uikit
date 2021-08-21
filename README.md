@@ -7,10 +7,10 @@ This package is not published onto the `npm` registry, but it can be directly in
 
 ```sh
 # npm
-npm install git+ssh://git@github.com:harmonylang/harmony-uikit.git#main
+npm install git+ssh://git@github.com:harmonylang/harmony-uikit.git#release
 
 # yarn
-yarn add git+ssh://git@github.com:harmonylang/harmony-uikit.git#main
+yarn add git+ssh://git@github.com:harmonylang/harmony-uikit.git#release
 ```
 
 This will perform the installation and any project building, i.e. the TypeScript compilation.
