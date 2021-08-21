@@ -8,7 +8,7 @@ import {parse} from '../src';
 
 import {Git} from 'git-interface';
 
-const {describe, it, before, after} = mocha;
+const {describe, it, before} = mocha;
 const {expect} = chai;
 
 // These tests are confirm that the intermediate JSON files output by the Harmony compile
