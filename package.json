@@ -13,5 +13,10 @@
     "fast-glob": "^3.2.7",
     "git-interface": "^2.1.1",
     "mocha": "^9.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.1",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0"
   }
 }

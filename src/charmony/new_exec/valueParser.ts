@@ -1,4 +1,4 @@
-import {IntermediateKeyValueRep, IntermediateValueRepresentation} from "../../types/IntermediateJson";
+import {IntermediateContextRep, IntermediateKeyValueRep, IntermediateValueRepresentation} from "../../types/IntermediateJson";
 import {entries} from "../../util/object_util";
 
 export function parseIntermediateValueRep(v: IntermediateValueRepresentation): unknown {
@@ -20,8 +20,16 @@ export function parseIntermediateValueRep(v: IntermediateValueRepresentation): u
             }
             return dict;
         }
+        case "context": {
+            const dict: Record<string, unknown> = {};
+            const context = value as IntermediateContextRep;
+            dict.name = parseIntermediateValueRep(context.name);
+            dict.arg = parseIntermediateValueRep(context.arg);
+            dict.pc = parseIntermediateValueRep(context.pc);
+            return dict;
+        }
     }
-    throw TypeError("Cannot parse this value");
+    throw TypeError(`Cannot parse this value: ${type}`);
 }
 
 export function parseVariableSet(sharedValues: undefined | Record<string, IntermediateValueRepresentation>): Record<string, unknown> {
